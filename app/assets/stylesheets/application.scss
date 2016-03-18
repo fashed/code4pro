@@ -1,4 +1,5 @@
 @import "materialize";
+@import "toastr";
 
 body {
   display: flex;
@@ -8,4 +9,27 @@ body {
 
 main {
   flex: 1 0 auto;
+}
+
+.no-background {
+	background: none;
+}
+
+.toast {
+  background-color: #030303;
+}
+.toast-info {
+  background-color: #3276b1;
+}
+.toast-info2 {
+  background-color: #2f96b4;
+}
+.toast-error {
+  background-color: #ff5252;
+}
+.toast-success {
+  background-color: #00e676;
+}
+.toast-warning {
+  background-color: #ffc107;
 }

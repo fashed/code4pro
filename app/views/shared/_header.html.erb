@@ -25,7 +25,10 @@
             <li><%= link_to "Log In", new_user_session_path %></li>
           <!-- Dropdown Trigger -->
           <% else %>
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><%= current_user.name%><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1">
+              <%= image_tag avatar_url(current_user), :class => "circle responsive-img" %> &nbsp;
+              <%= current_user.name %>
+              <i class="material-icons right">arrow_drop_down</i></a></li>
           <% end %>
         </ul>
 
@@ -36,7 +39,7 @@
             <li><%= link_to "Log In", new_user_session_path %></li>
           <!-- Dropdown Trigger -->
           <% else %>
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown2"><%= current_user.email%><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown2"> <%= image_tag avatar_url(current_user), :class => "circle responsive-img" %> &nbsp; <%= current_user.name%><i class="material-icons right">arrow_drop_down</i></a></li>
           <% end %>
         </ul>
       </div>
