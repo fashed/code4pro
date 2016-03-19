@@ -28,6 +28,8 @@ gem 'devise'
 gem 'toastr-rails'
 gem 'omniauth'
 gem 'omniauth-google-oauth2'
+gem 'omniauth-facebook'
+gem 'oauth2'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
