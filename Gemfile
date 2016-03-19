@@ -30,6 +30,8 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 gem 'oauth2'
+gem 'font-awesome-sass'
+gem 'activeadmin', github: 'activeadmin'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
