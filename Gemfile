@@ -34,7 +34,8 @@ gem 'font-awesome-sass'
 gem 'activeadmin', github: 'activeadmin'
 gem 'active_skin'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
-
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+gem 'coderay', '~> 1.1', '>= 1.1.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
