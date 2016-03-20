@@ -7,5 +7,6 @@ class ProjectController < ApplicationController
   	@project = Project.find(params[:id])
   	@tasks = @project.tasks.order(:tag)
   end
+  
 end
 
