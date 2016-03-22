@@ -3,7 +3,8 @@
   <div class="col m4">
     <div class="card z-depth-2">
       <div class="center">
-        <h1><%= @project.price %></h1>
+        <br />
+        <h1>$<%= @project.price %></h1>
       </div>
       
       <div class="card-action center">
@@ -29,7 +30,7 @@
           <% @tasks.each do |task| %>
             <% if task.header %>
               <div class="collection-item active">
-                <i class="mdi-social-school">&nbsp;<%= task.title %></i>
+                <i class="mdi-social-school"></i>&nbsp;<%= task.title %>
               </div>
 
             <% else %>
