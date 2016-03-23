@@ -7,6 +7,9 @@ class User < ActiveRecord::Base
 
   validates :name, presence: :true, length: {maximum: 25}
 
+  has_many :subscriptions
+  has_many :projects, through: :subscriptions
+
   #using self, dont have to create new instance of the user. can do User.find_for_google_oauth2(bla)
   #@user = User
   #then @user.find_for_google_oauth2(blah)

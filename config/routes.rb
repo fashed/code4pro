@@ -6,6 +6,9 @@ Rails.application.routes.draw do
               :controllers => {:omniauth_callbacks => "omniauth_callbacks"}
 
   get 'pages/about'
+
+  post '/free' => 'charges#free'
+  
   root to: 'project#index'
 
   resources :project do
