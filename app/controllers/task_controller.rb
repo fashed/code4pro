@@ -18,8 +18,9 @@ class TaskController < ApplicationController
 	  	@next_task = @task.next
 	  	@prev_task = @task.prev
 	  else
-	  	flash[:notice] = "No permission to view this. Please log in."
+	  	flash[:notice] = "No permission to view this. Please take this project."
 	  	redirect_to project
 	  end
   end
+  
 end

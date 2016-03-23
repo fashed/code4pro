@@ -265,6 +265,6 @@ Devise.setup do |config|
   require 'omniauth-google-oauth2'
   config.omniauth :google_oauth2, ENV['GOOGLE_KEY'], ENV['GOOGLE_SECRET'], {access_type: "offline", approval_prompt: ""}
 
-  config.omniauth :facebook, "," , scope: 'email', info_fields: 'email'
-  config.omniauth :facebook, ENV['FB_APP_ID'], ENV['FB_APP_SECRET'], scope: 'email', info_fields: 'email'
+  #config.omniauth :facebook, "," , scope: 'email', info_fields: 'email, first_name, last_name'
+  config.omniauth :facebook, ENV['FB_APP_ID'], ENV['FB_APP_SECRET'], scope: 'email', :image_size => 'large', info_fields: 'email, first_name, last_name'
 end
