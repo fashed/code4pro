@@ -18,6 +18,14 @@ class ProjectController < ApplicationController
   	end
 
   	@users = @project.users.order('created_at desc').first(10)
+
+    #initialize new, blank instance of review
+    @review = Review.new
+    #get list of all reviews in this project
+    @reviews = @project.reviews
+
+    #check if user already has review
+    @hasReview = @reviews.find_by(user_id: current_user.id) if current_user
   end
 
   def list

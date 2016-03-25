@@ -5,7 +5,7 @@ module ApplicationHelper
 		if user.image
 			user.image
 		elsif gravatar_id
-			"https://www.gravatar.com/avatar/#{gravatar_id}.jpg?d=mm&s=40"
+			"https://www.gravatar.com/avatar/#{gravatar_id}.jpg?d=mm&s=150"
 		end
 	end
 

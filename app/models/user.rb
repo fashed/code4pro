@@ -9,6 +9,7 @@ class User < ActiveRecord::Base
 
   has_many :subscriptions
   has_many :projects, through: :subscriptions
+  has_many :reviews
 
   #using self, dont have to create new instance of the user. can do User.find_for_google_oauth2(bla)
   #@user = User
