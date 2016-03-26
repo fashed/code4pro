@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/myprojects' => 'project#list'
 
   post '/free' => 'charges#free'
+  post '/pay' => 'charges#pay'
   
   root to: 'project#index'
 
