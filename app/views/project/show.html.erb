@@ -1,3 +1,22 @@
+<%= content_for :head do%>
+  <title><%= @project.name %> | Code4Pro </title>
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@code4startup" />
+  <meta name="twitter:creator" content="@code4startup" />
+  <meta property="og:title" content="<%= @project.name %>" />
+  <meta property="og:description" content="<%= @project.content %>" />
+  <meta property="og:image" content="<%= image_url @project.image %>" />
+
+  <meta property="og:title" content="<%= @project.name %>"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="<%= @project.image %>"/>
+  <meta property="og:site_name" content="Code4Pro"/>
+  <meta property="og:description" content="<%= @project.content %>
+  ">
+
+<% end %>
+
 <div class="row" data-no-turbolink>
 
   <div class="col m4">
@@ -138,8 +157,32 @@
             </div>
           </div>
 
-          <div id="discussion" class="col s12">
-            <!-- Discussion here -->
+          <div id="discussion" class="col s10 offset-s1">
+            <div id="disqus_thread"></div>
+              <script>
+
+              var disqus_shortname = 'code4pro';
+              var disqus_identifier = '<%= @project.id %>';
+              /**
+              * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+              * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+              */
+              /*
+              var disqus_config = function () {
+              this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+              */
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+
+              s.src = '//code4pro-test.disqus.com/embed.js';
+
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
           </div>
         </div>
 
