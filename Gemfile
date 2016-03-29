@@ -49,9 +49,16 @@ gem 'stripe'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+	gem 'thin'
+end
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'sqlite3'
 end
 
 group :development do

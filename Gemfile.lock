@@ -144,7 +144,6 @@ GEM
     materialize-sass (0.97.5)
       sass (~> 3.3)
     mime-types (2.99.1)
-    mime-types-data (3.2016.0221)
     mimemagic (0.3.0)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
